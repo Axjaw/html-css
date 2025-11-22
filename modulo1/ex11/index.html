@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.  
+    </p>
+<!-- MUITO IMPORTANTE PARA A EXPERIÊNCIA DO USUÁRIO -->
+<picture>
+  <source media="(min-width: 1001px)" srcset="imagens/foto-g.png" type="image/png">
+
+  <source media="(min-width: 651px)" srcset="imagens/foto-m.png" type="image/png">
+
+  <img src="imagens/foto-p.png" alt="Imagem flexível">
+  <!-- AJUSTA PARA TODOS OS DISPOSITIVOS POSSÍVEIS QUESITO TAMANHO DE TELA!!!-->
+
+<h1>Reproduzindo Áudios</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+<audio autoplay preload="auto" controls loop>
+    <source src="midia/good-for-the-ghost.mp3" type="audio/mpeg">
+    <source src="midia/good-for-the-ghost.ogg" type="audio/ogg">
+    <source src="midia/good-for-the-ghost.wav" type="audio/wav">
+    <!-- O MELHOR É MP3, WAV É O PIOR, MAIS PESADO!! -->
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/good-for-the-ghost.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    
+</audio>
+</picture>
+</body>
+</html>

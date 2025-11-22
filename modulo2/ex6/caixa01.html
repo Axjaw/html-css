@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {  /* BOX-LEVEL */
+            /* MÉTODO SEM SHORTHAND: */
+            /*background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: groove;
+            border-color: rgb(48, 44, 70);
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            margin: auto; */
+            /* centralizou com margin 
+            margin-bottom: 40px;
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: rgb(21, 21, 49); */
+            
+
+        /* COM SHORTHAND: */
+
+            background-color: beige;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+
+            padding: 10px 20px;
+
+            outline: 5px dashed black;
+
+            margin: 20px auto 40px auto;
+          /* SE QUISER FAZER VIRAR INLINE-LEVEL
+            display: inline; */
+        }
+
+        a {  /* INLINE-LEVEL */
+            border-width: 10px;
+            border-style: double;
+            border-color: rgb(41, 79, 110);
+            color: aqua;
+            background-color: black;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de ceixas inline-level</a>. vamos ver como tudo isso funciona!</p>
+</body>
+</html>
