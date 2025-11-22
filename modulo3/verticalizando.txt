@@ -1,0 +1,36 @@
+MÓDULO 3:
+
+FAZ A IMAGEM DE FUNDO FICAR PERFEITAMENTE DE FUNDO NO SITE:
+background-size: cover;
+background-attachment: fixed;
+
+CENTRALIZA VERTICALMENTE TUDO
+na section: position: relative; (APESAR DE QUE GERALMENTE JÁ É RELATIVE POR PADRÃO, MAS VALE COLOCAR)
+
+NO QUE TA DENTRO:
+position: absolute;
+ +transformation translate com left 50% e top 50%
+  ---> EX:
+
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 90vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
